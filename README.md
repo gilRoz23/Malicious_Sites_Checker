@@ -1,4 +1,4 @@
-# Malicious Site Checker
+# Malicious Sites Checker
 
 ## Description
 This Chrome extension alerts users about potentially malicious websites by applying filters to URLs and checking them against the VirusTotal API for analysis.
