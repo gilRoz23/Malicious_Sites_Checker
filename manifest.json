@@ -1,0 +1,24 @@
+  {
+    "manifest_version": 2,
+    "name": "Malicious Site Checker",
+    "version": "1.0",
+    "description": "A Chrome extension to alert users from potentially malicious websites",
+    "permissions": [
+      "tabs",
+      "https://www.virustotal.com/*"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "browser_action": {
+      "default_icon": "cyber-security.png",
+      "default_popup": "popup.html"
+    }
+  }
